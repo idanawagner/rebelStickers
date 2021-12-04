@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Road+Rage&family=Yuji+Boku&display=swap');
+
+/*COLOR
+  ROJO  F03938
+  AZUL 145E9F
+  NARANJA F17A3A
+  AMARILLO FEB42A
+  NEGRO 2F2838
+TEXTO
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Road Rage', cursive;
+    font-family: 'Yuji Boku', serif;
+    */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 75vh;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-size: unset;
+    background-position: right;
+    background-image: url(../images/inicio/fondoVideo8.jpg);
+    background-size: cover;
+    background-size: contain;
+    background-color: black;
+}
+.header__contenedorLogo{
+    
+}
+
+.header__logo{
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.header__titular {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.header__bienvenidos {
+    color: #F17A3A;
+    font-family: 'Road Rage', cursive;
+    font-weight: 900;
+    font-size: 15vh;
+    letter-spacing: 20px;
+}
+
+.header__texto{
+    font-family: 'Yuji Boku', serif;
+    font-size: 20px;
+    color: white;
+}
+.header__lema{
+    font-family: 'Cairo', sans-serif;
+    font-size: 30px;
+}
+.header__nav{
+    display: flex;
+    align-items:flex-start;
+    list-style: none;
+    justify-content: space-around;
+    background-color:#faa406;
+    
+}
+.header__navItem{
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Road Rage', cursive;
+    border-color : blanchedalmond solid;
+} 
+.header__buscador{
+    display: flex;
+    align-self:center ;  
+}
+.header__search{
+    background-color: #faa406;
+    background-position: center;
+}
+.main{
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 5px;
+}
+.main__carrousel{
+    display: grid;
+    object-fit: contain;   
+    border: dotted blanchedalmond 8px;
+    grid-template-columns: repeat(4,3fr);
+}
+.main__carrouselImagen{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    background-size: cover; 
+    overflow: hidden;
+}
+.main__contenedor{
+   
+    background-color: black;
+    padding: 5px 0px;
+    display: flexbox;
+}
+.main__videoParrafo{
+    margin: 10px ;
+    padding:10px ;
+}
+
+}
+.main_contenedorParrafo{
+    text-align: left;
+    padding: 10px 0px;
+    margin: 10px 0px;  
+    
+}
+.main__nosotros{
+    font-family: 'Road Rage', cursive;
+    font-size: 80px ;
+    color: #faa406;
+    background-color:black;
+    display: inline;
+}
+.main__parrafo{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    color: #eef0f0;
+    font-size: 17px;
+    background-color: black;
+    letter-spacing:1px;
+}
+.main__contenedorImagenes{    
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4, 100fr);
+    grid-template-rows: 4fr;
+}
+.main__imagenes{
+    height: 100%;
+    width: 100%; 
+    padding: 20px;
+}
+
+
+.footer__contenedor{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: black;  
+}
+.footer__redes{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-self: center;  
+    flex-wrap: wrap;
+}
+.footer__redesItem{
+    width: 100px;
+   height: 100px;
+}
+.footer__nav{
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.footer__navItem{
+    padding: 10px;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Road Rage', cursive; 
+    border:solid;
+    background-color:#faa406 ;
+    text-decoration: none;
+}
+.footer__logo{
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: flex-end;
+    padding: 1px;
+    margin: 5px;
+}
+.separador{
+    height: 10px;
+    background: rgb(131,58,180);
+    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fc4545",GradientType=1);
+}
+
+
+
+/*FIN INDEX*/
+/*STICKERS*/
+
+.main__categorias{
+    padding: 3vh;
+    color:#faa406;
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.main__categorias--stickers{
+    background-image: url(../images/stickers/fondoStickers.jpg);
+
+}
+.main__categoriasTitulo{
+    background-color: black;
+    font-family: 'Road Rage', cursive;
+    letter-spacing: 10px;
+
+}
+.main__boxCatalogo{    
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.main__catalogo{
+    height: 800px;
+    width: 3000px;
+}
+/*CUADERNOS*/
+.main__categorias--cuadernos{
+    background-image: url(../images/cuadernos/fondoCuadernos.jpg);
+    background-position: bottom;
+}
+.main__contenedorImagenes--cuadernos{
+    padding: 1px;
+    width: ;
+    margin: 1rem;
+    object-fit: contain;
+    flex-wrap: wrap;
+}
+.main__imagenesCuadernos {
+    padding: 1rem;
+    width: 36rem;
+    height: 48rem;
+}
+
+
+
+/*MEDIA QUERIES*/
+/*ESTILOS DESKTOP*/
+
+
+@media screen and (max-width: 425px){
+    .main__video{
+        width: 50%;
+    }
+    .main__imagenes{
+        width: 99%;
+    }
+    .header__contenedorLogo{
+        width: 50%;
+        text-align: center;
+    }
+    .header__logo{
+        width: 50%;
+        padding: 1px;
+        margin: 5px;
+    }
+}
+
+/*ESTILOS MOVILES*/
+
+@media screen and (max-width: 768px){
+    .footer__nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+    .footer__navItem{
+        display: grid;
+        text-align: center;
+    }
+    .footer__redes{
+        display: grid;
+    }
+    .separador{
+        border: #03f317 solid;
+    }
+    .main__video {
+        width: 100%;
+    }
+    .main__contenedorImagenes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main__imagenes{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 14px 19px;
+    }
+    .main__nosotros{
+        font-size: 2.5rem
+    }
+    .header{
+        display: flex;
+        background-position: right;
+        background-image: url(../images/inicio/fondoVideo8.jpg);
+    }
+    .header__titular{
+     
+        display: inline-grid;
+    }
+
+
+    .header__bienvenidos{
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: normal;
+    }
+
+
+    .header__contenedorLogo{
+        width: 100%;
+        text-align: center;
+    }
+    .header__logo{
+        width: 50%;
+        padding: 1px;
+        margin: 5px;
+    }
+    .header__nav {
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+    
+
+}
