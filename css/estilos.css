@@ -1,92 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Road+Rage&family=Yuji+Boku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Fuzzy+Bubbles:wght@700&family=Lato&family=Road+Rage&display=swap');
+/*
+COLOR PRINCIPAL
+#FF0606
+COLOR SECUNDARIO
+#7C7A6F
+TERCER COLOR
+#2F2F2F
+CUARTO COLOR
+#E0E0E0
+COLOR CLARO
+#FFFFFF
+COLOR OSCURO
+#181818
 
-/*COLOR
-  ROJO  F03938
+ROJO  F03938
   AZUL 145E9F
   NARANJA F17A3A
   AMARILLO FEB42A
   NEGRO 2F2838
+
 TEXTO
-    font-family: 'Cairo', sans-serif;
-    font-family: 'Road Rage', cursive;
-    font-family: 'Yuji Boku', serif;
-    */
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
-.header {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 75vh;
-    background-repeat: no-repeat;
-    flex-wrap: wrap;
-    background-size: unset;
-    background-position: right;
-    background-image: url(../images/inicio/fondoVideo8.jpg);
-    background-size: cover;
-    background-size: contain;
-    background-color: black;
+.header{
+  display:box-grid;
+  grid-template-rows: repeat(4,1fr);
+  align-items:center;
+  flex-wrap:wrap;
+  padding: 10px;
+  background-color: #181818 ;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  background-size: unset;
+  background-position: right;
+  background-image: url(../images/inicio/fondoVideo8.jpg);
+  background-size: cover;
+  background-size: contain;
+  background-color: black;
+}
+.header__buscador{
+  text-align: star
 }
 .header__logo{
-    width: 100%;
-    border-radius: 100%;
+    text-align: center;
+    border-radius: 50%;
     object-fit: cover;
 }
-.header__titular {
-    text-align: center;
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-}
-.header__bienvenidos {
-    color: #FEB42A;
-    font-family: 'Road Rage', cursive;
-    font-weight: 900;
-    font-size: 15vh;
-    letter-spacing: 20px;
+.header__bienvenidos{
+  text-align:center;
+  color: #FEB42A;
+  letter-spacing: 10px;
+  font-size: 4rem;
+  font-family: 'Road Rage', cursiv
 }
 
-.header__texto{
-    font-family: 'Yuji Boku', serif;
-    font-size: 20px;
-    color: white;
-}
+
 .header__lema{
-    font-family: 'Cairo', sans-serif;
-    font-size: 30px;
+  text-align:center;
+  color: #FEB42A;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  
+}
+.separador{
+      background: chartreuse;
+      height: 2px;
 }
 .header__nav{
-    display: flex;
-    align-items:flex-start;
-    list-style: none;
-    justify-content: space-around;
-    background-color:#faa406;
+  display:grid;
+  grid-template-columns: 3.5fr 1fr;
+  justify-items: center;
+  background-color: black ;
+  align-items: center;
+
+}
+.header__lista{
+  display:flex;
+  justify-self: flex-end;
+  list-style:none;
+
 }
 .header__navItem{
-    color: #000000;
-    font-size: 30px;
-    font-family: 'Road Rage', cursive;
-    border-color : blanchedalmond solid;
-} 
-.header__buscador{
-    display: flex;
-    align-self:center ;  
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 1.5rem ;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color:#ffffff;
+  }
+.header__redes{
+  display:flex;
+  justify-self: end;  
+  padding:0.2px;   
 }
-.header__search{
-    background-color: #faa406;
-    background-position: center;
+.header__redesItem{
+  padding:0.1px; 
 }
 .main{
-    flex-wrap: wrap;
-    background-color: black;
-    padding: 5px;
+      background-color: black;
+}
+.main__hero{
+    display:grid;
+    grid-template-areas:
+    "bienvenidos"
+    "carrousel";
+    padding: 3rem 6rem 8rem 6rem;
+}
+.main__bienvenidos{
+    grid-area: bienvenidos;
+    color: #F17A3A;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
 }
 .main__carrousel{
-    display: grid;
-    object-fit: contain;   
-    border: dotted blanchedalmond 8px;
+  display: grid;
+  object-fit: contain;   
+  border: dotted blanchedalmond 8px;
     grid-template-columns: repeat(4,3fr);
 }
 .main__carrouselImagen{
@@ -96,272 +133,41 @@ TEXTO
     background-size: cover; 
     overflow: hidden;
 }
-.main__contenedor{
-    background-color: black;
-    padding: 5px 0px;
-    display: flexbox;
-}
-.main__videoParrafo{
-    margin: 10px ;
-    padding:10px ;
-}
-.main_contenedorParrafo{
-    text-align: left;
-    padding: 10px 0px;
-    margin: 10px 0px;  
-}
-.main__nosotros{
-    font-family: 'Road Rage', cursive;
-    font-size: 80px ;
-    color: #faa406;
-    background-color:black;
-    display: inline;
-}
-.main__parrafo{
-    font-family: 'Cairo', sans-serif;
-    font-weight: 900;
-    color: #eef0f0;
-    font-size: 17px;
-    background-color: black;
-    letter-spacing:1px;
-}
+
+
 .main__contenedorImagenes{    
-    display: grid;
-    padding: 10px;
-    grid-template-columns: repeat(4, 100fr);
-    grid-template-rows: 4fr;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .main__imagenes{
-    height: 100%;
-    width: 100%; 
-    padding: 20px;
-}
-.footer__contenedor{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: black;  
-}
-.footer__redes{
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    align-self: center;  
-    flex-wrap: wrap;
-}
-.footer__redesItem{
-    width: 100px;
-   height: 100px;
-}
-.footer__nav{
-    margin: 20px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 50px;
-}
-.footer__navItem{
-    padding: 10px;
-    color: #000000;
-    font-size: 30px;
-    font-family: 'Road Rage', cursive; 
-    border:solid;
-    background-color:#faa406 ;
-    text-decoration: none;
-}
-.footer__logo{
-    width: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    align-items: flex-end;
-    padding: 1px;
-    margin: 5px;
-}
-.separador{
-    height: 10px;
-    background: rgb(131,58,180);
-    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fc4545",GradientType=1);
-}
-/*FIN INDEX*/
+  width: 90%; 
+  padding: 20px;
+  grid-row: 1;
 
+}
+.main__imgNombre {
+  grid-row: 2;
+  color: #ffffff;
+  padding-left: 20px;
 
+}
+.main__imgPrecio{
+  color: #ffffff;
+  padding-left: 20px;
 
-/*STICKERS*/
-.main__categorias{
-    padding: 3vh;
-    color:#faa406;
-    font-size: 4rem;
-    display: flex;
-    justify-content: flex-start;
 }
-.main__categorias--stickers{
-    background-image: url(../images/stickers/fondoStickers.jpg);
+.main__videoParrafo{
+  display: grid;
+  grid-template-areas: "parrafo video";
+  grid-template-columns: repeat(2,2fr);
 }
-.main__categoriasTitulo{
-    background-color: black;
-    font-family: 'Road Rage', cursive;
-    letter-spacing: 10px;
+.main__contenedorParrafo{
+  grid-area: parrafo;
 }
-.main__boxCatalogo{    
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.main__video{
+  grid-area: video;
 }
-.main__catalogo{
-    height: 800px;
-    width: 3000px;
-}
-
-
-/*CUADERNOS*/
-.main__categorias--cuadernos{
-    background-image: url(../images/cuadernos/fondoCuadernos.jpg);
-    background-position: bottom;
-}
-.main__contenedorImagenes--cuadernos{    
-    display: grid;
-    padding: 10px;
-    grid-template-columns: repeat(2, 100fr);
-    grid-template-rows: 3fr;
-}
-.main__imagenesCuadernos{
-    height: 100%;
-    width: 100%; 
-    padding: 20px;
-}
-
-
-/*FORMULARIO*/
- .main__formulario{
-        color:white ;
-        display: grid;
-        padding: 2rem;
-    }
-.main__textoFormulario{
-    color: white;
-}
-
-
-/*MEDIA QUERIES*/
-/*ESTILOS DESKTOP*/
-@media screen and (min-width: 1440px){
-    .main__video{
-        width: 50%;
-    }
-    .main__imagenes{
-        width: 99%;
-    }
-    .header__bienvenidos{
-        font-size: 5rem;
-    }
-    .header__texto{
-        font-size: 2rem;
-    }
-    .header__titular{
-        align-self: center;
-    }
-    .header__navItem{
-        font-size: 3rem;
-    }
-    .header__search{
-        font-size: 2rem;
-    }
-}
-@media screen and (min-width:2560px){
-    .header__bienvenidos{
-        font-size: 10rem;
-    }
-    .header__texto, .header__lema, .header__navItem, .footer__navItem, .main__nosotros{
-        font-size: 4rem; 
-    }
-    .main__parrafo{
-        font-size: 2rem;
-    }
-}
-/* ESTILOS TABLET*/
-@media screen and (min-width:768px) {
-    .main__formulario{
-        padding-left:15rem;
-        padding-right: 15rem;
-    }
-}
-@media screen and (max-width: 425px){
-    .header__nav {
-        align-items: center;
-        list-style: none;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-/*ESTILOS MOVILES*/
-@media screen and (max-width: 768px){
-    .footer__nav{
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px;
-    }
-    .footer__navItem{
-        display: grid;
-        text-align: center;
-    }
-    .footer__redes{
-        display: grid;
-    }
-    .separador{
-        border: #03f317 solid;
-    }
-    .main__video {
-        width: 100%;
-    }
-    .main__contenedorImagenes{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .main__imagenes{
-        width: 100%;
-        flex-wrap: wrap;
-        padding: 14px 19px;
-    }
-    .main__nosotros{
-        font-size: 2.5rem
-    }
-    .header{
-        display: flex;
-        background-position: right;
-        background-image: url(../images/inicio/fondoVideo8.jpg);
-    }
-    .header__titular{
-        display: inline-grid;
-    }
-    .header__bienvenidos{
-        font-size: 1.8rem;
-        text-align: center;
-        letter-spacing: normal;
-    }
-    .header__contenedorLogo{
-        width: 100%;
-        text-align: center;
-    }
-    .header__logo{
-        width: 30%;
-        padding: 1px;
-        margin: 5px;
-    }
-   
-    .main__categoriasTitulo {
-        font-size: 3rem;
-    }
-    .main__catalogo {
-        height: 331px;
-    }
-    .main__contenedorImagenes--cuadernos{    
-        grid-template-columns: repeat(1, 100fr);
-        grid-template-rows: 5fr;
-    }
+.main__parrafo{
+  color: #ffffff;
 }
