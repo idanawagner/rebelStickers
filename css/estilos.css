@@ -29,10 +29,6 @@ TEXTO
     background-size: contain;
     background-color: black;
 }
-.header__contenedorLogo{
-    
-}
-
 .header__logo{
     width: 100%;
     border-radius: 100%;
@@ -45,7 +41,7 @@ TEXTO
     flex-direction: column;
 }
 .header__bienvenidos {
-    color: #F17A3A;
+    color: #FEB42A;
     font-family: 'Road Rage', cursive;
     font-weight: 900;
     font-size: 15vh;
@@ -67,7 +63,6 @@ TEXTO
     list-style: none;
     justify-content: space-around;
     background-color:#faa406;
-    
 }
 .header__navItem{
     color: #000000;
@@ -102,7 +97,6 @@ TEXTO
     overflow: hidden;
 }
 .main__contenedor{
-   
     background-color: black;
     padding: 5px 0px;
     display: flexbox;
@@ -111,13 +105,10 @@ TEXTO
     margin: 10px ;
     padding:10px ;
 }
-
-}
 .main_contenedorParrafo{
     text-align: left;
     padding: 10px 0px;
     margin: 10px 0px;  
-    
 }
 .main__nosotros{
     font-family: 'Road Rage', cursive;
@@ -145,8 +136,6 @@ TEXTO
     width: 100%; 
     padding: 20px;
 }
-
-
 .footer__contenedor{
     display: flex;
     margin-left: auto;
@@ -198,85 +187,119 @@ TEXTO
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,233,253,1) 50%, rgba(252,69,69,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fc4545",GradientType=1);
 }
-
-
-
 /*FIN INDEX*/
-/*STICKERS*/
 
+
+
+/*STICKERS*/
 .main__categorias{
     padding: 3vh;
     color:#faa406;
     font-size: 4rem;
     display: flex;
     justify-content: flex-start;
-    
 }
 .main__categorias--stickers{
     background-image: url(../images/stickers/fondoStickers.jpg);
-
 }
 .main__categoriasTitulo{
     background-color: black;
     font-family: 'Road Rage', cursive;
     letter-spacing: 10px;
-
 }
 .main__boxCatalogo{    
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 .main__catalogo{
     height: 800px;
     width: 3000px;
 }
+
+
 /*CUADERNOS*/
 .main__categorias--cuadernos{
     background-image: url(../images/cuadernos/fondoCuadernos.jpg);
     background-position: bottom;
 }
-.main__contenedorImagenes--cuadernos{
-    padding: 1px;
-    width: ;
-    margin: 1rem;
-    object-fit: contain;
-    flex-wrap: wrap;
+.main__contenedorImagenes--cuadernos{    
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2, 100fr);
+    grid-template-rows: 3fr;
 }
-.main__imagenesCuadernos {
-    padding: 1rem;
-    width: 36rem;
-    height: 48rem;
+.main__imagenesCuadernos{
+    height: 100%;
+    width: 100%; 
+    padding: 20px;
 }
 
+
+/*FORMULARIO*/
+ .main__formulario{
+        color:white ;
+        display: grid;
+        padding: 2rem;
+    }
+.main__textoFormulario{
+    color: white;
+}
 
 
 /*MEDIA QUERIES*/
 /*ESTILOS DESKTOP*/
-
-
-@media screen and (max-width: 425px){
+@media screen and (min-width: 1440px){
     .main__video{
         width: 50%;
     }
     .main__imagenes{
         width: 99%;
     }
-    .header__contenedorLogo{
-        width: 50%;
-        text-align: center;
+    .header__bienvenidos{
+        font-size: 5rem;
     }
-    .header__logo{
-        width: 50%;
-        padding: 1px;
-        margin: 5px;
+    .header__texto{
+        font-size: 2rem;
+    }
+    .header__titular{
+        align-self: center;
+    }
+    .header__navItem{
+        font-size: 3rem;
+    }
+    .header__search{
+        font-size: 2rem;
     }
 }
-
+@media screen and (min-width:2560px){
+    .header__bienvenidos{
+        font-size: 10rem;
+    }
+    .header__texto, .header__lema, .header__navItem, .footer__navItem, .main__nosotros{
+        font-size: 4rem; 
+    }
+    .main__parrafo{
+        font-size: 2rem;
+    }
+}
+/* ESTILOS TABLET*/
+@media screen and (min-width:768px) {
+    .main__formulario{
+        padding-left:15rem;
+        padding-right: 15rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .header__nav {
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 /*ESTILOS MOVILES*/
-
 @media screen and (max-width: 768px){
     .footer__nav{
         flex-wrap: wrap;
@@ -300,7 +323,6 @@ TEXTO
         display: flex;
         flex-wrap: wrap;
     }
-    
     .main__imagenes{
         width: 100%;
         flex-wrap: wrap;
@@ -315,34 +337,31 @@ TEXTO
         background-image: url(../images/inicio/fondoVideo8.jpg);
     }
     .header__titular{
-     
         display: inline-grid;
     }
-
-
     .header__bienvenidos{
         font-size: 1.8rem;
         text-align: center;
         letter-spacing: normal;
     }
-
-
     .header__contenedorLogo{
         width: 100%;
         text-align: center;
     }
     .header__logo{
-        width: 50%;
+        width: 30%;
         padding: 1px;
         margin: 5px;
     }
-    .header__nav {
-        align-items: center;
-        list-style: none;
-        flex-wrap: wrap;
-        flex-direction: column;
-    
+   
+    .main__categoriasTitulo {
+        font-size: 3rem;
     }
-    
-
+    .main__catalogo {
+        height: 331px;
+    }
+    .main__contenedorImagenes--cuadernos{    
+        grid-template-columns: repeat(1, 100fr);
+        grid-template-rows: 5fr;
+    }
 }

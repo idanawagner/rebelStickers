@@ -10,8 +10,8 @@
 <body>
     <header> <!--ENCABEZADO-->
         <section class="header">
-            <div class="header__logo">
-                <img src="../images/logoRS.jpeg" alt="Logo Rebel Stickers">
+            <div class="header__contenedorLogo">
+                <img class="header__logo"src="../images/logoRS.jpeg" alt="Logo Rebel Stickers">
             </div>
             <div class="header__titular">
                 <div class="header__bienvenidos">
@@ -27,8 +27,8 @@
                             Envíos a todo el país 🇦🇷🚀🌈</P>
                     </div>
                 </div>
+                
             </div>
-        </section>
         </section>
         <hr class="separador">
         <nav>
@@ -37,7 +37,6 @@
                <li><a class="header__navItem" href="./stickers.html">Stickers</a></li>
                <li><a class="header__navItem" href="./cuadernos.html">Cuadernos</a></li>
                <li><a class="header__navItem" href="./covers.html">Covers</a></li>
-               <li><a class="header__navItem" href="./posters.html">Posters</a></li>
                <li><a class="header__navItem" href="#">Enviar Pedido</a></li>
                <div class="header__buscador">
                    <input  class="header__search" type="search" name="search" id="search" placeholder="search">
@@ -48,15 +47,15 @@
             </ul>
         </nav>
     </header> <!--FIN DEL ENCABEZADO-->   
-    <main>
-        <p>Podes enviar tu pedido por acá o contactarnos por MD en nuestras redes sociales</p>
-        <nav>
-            <a href="https://www.facebook.com/Rebel-stickers-213276746784089/?ref=page_internal">Facebook</a>
-            <a href="https://www.instagram.com/rebel_stickers/">Instagram</a>
-            <a href="https://api.whatsapp.com/send?phone=+5492915205685&text=Holis!%20Bienvenid*%20a%20la%20rebeli%C3%B3n,%20en%20un%20ratito%20respondemos%20tu%20mensaje!">Whatsapp</a>
-        </nav> <!--Poner iconos en lugar del nombre-->
+    <main class="main">
+            <div class="main__categorias main__categorias--enviarPedido">
+                <h2 class="main__categoriasTitulo">
+                    ENVIAR PEDIDO
+                </h2>
+            </div>
+        <p class="main__textoFormulario">Podes enviar tu pedido por acá o contactarnos por MD en nuestras redes sociales</p>
         <br>
-        <form action="#" method="get">
+        <form class="main__formulario" action="#" method="get">
             <label for="userName">Nombre y Apellido</label>
                 <input type="text" name="user-name" id="userName" placeholder="Nombre y Apellido">
             <br>
@@ -108,7 +107,6 @@
                     <li><a class="footer__navItem" href="./stickers.html">Stickers</a></li>
                     <li><a class="footer__navItem" href="./cuadernos.html">Cuadernos</a></li>
                     <li><a class="footer__navItem" href="./covers.html">Covers</a></li>
-                    <li><a class="footer__navItem" href="./posters.html">Posters</a></li>
                     <li><a class="footer__navItem" href="#">Enviar Pedido</a></li>
                 </ul>
             </nav>
