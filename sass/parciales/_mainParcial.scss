@@ -1,0 +1,53 @@
+@import "../parciales/vars";
+
+.main{
+    &__bienvenidos{
+        font-family: 'Fuzzy Bubbles', cursive;
+    
+    }
+    &__carousel{
+        height: 83vh;
+
+        &__img{
+            object-fit: cover;
+            height: 80vh;
+        }
+    }
+    &__boxImg{    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &__img{
+            width: 80%; 
+            grid-row: 1;
+        }
+    }
+    &__imgNombre {
+        grid-row: 2;
+        color: $color-principal;
+    }
+    &__imgPrecio{
+        color: $color-principal;
+          
+    }
+    
+    
+    &__videoParrafo{
+        display: grid;
+        grid-template-areas: "parrafo video";
+        grid-template-columns: 2fr;
+        
+
+    }
+    &__contenedorParrafo{
+        grid-area: parrafo;
+    
+    }
+
+    &__video{
+        grid-area: video;
+
+        width: 80%;
+  }
+}
+

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Fuzzy+Bubbles:wght@700&family=Lato&family=Road+Rage&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-position: right;
+  background-image: url(../images/inicio/fondoVideo8.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+
+.header__nombre {
+  letter-spacing: 15px;
+  font-size: 4rem;
+  font-family: 'Road Rage', cursive;
+}
+
+.header__lema {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.header__redesItem {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.separador {
+  opacity: 100;
+  margin: 0px;
+  height: 8px !important;
+  background: black;
+  background: -webkit-gradient(linear, right top, left top, from(black), color-stop(50%, #ffc107), to(black));
+  background: linear-gradient(270deg, black 0%, #ffc107 50%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.color-change-2x {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #ffc107;
+  }
+  100% {
+    background: black;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: black;
+  }
+  100% {
+    background: #ffc107;
+  }
+}
+
+.main__bienvenidos {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.main__carousel {
+  height: 83vh;
+}
+
+.main__carousel__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 80vh;
+}
+
+.main__boxImg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.main__boxImg__img {
+  width: 80%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.main__imgNombre {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  color: #ffc107;
+}
+
+.main__imgPrecio {
+  color: #ffc107;
+}
+
+.main__videoParrafo {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "parrafo video";
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
+}
+
+.main__contenedorParrafo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: parrafo;
+}
+
+.main__video {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: video;
+  width: 80%;
+}
+/*# sourceMappingURL=main.css.map */

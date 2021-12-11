@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Fuzzy+Bubbles:wght@700&family=Lato&family=Road+Rage&display=swap');
+/*
+COLOR PRINCIPAL
+#FF0606
+COLOR SECUNDARIO
+#7C7A6F
+TERCER COLOR
+#2F2F2F
+CUARTO COLOR
+#E0E0E0
+COLOR CLARO
+#FFFFFF
+COLOR OSCURO
+#181818
+
+ROJO  F03938
+  AZUL 145E9F
+  NARANJA F17A3A
+  AMARILLO FEB42A
+  NEGRO 2F2838
+
+TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.header{
+  display:box-grid;
+  grid-template-rows: repeat(4,1fr);
+  align-items:center;
+  flex-wrap:wrap;
+  padding: 2px;
+  flex-wrap: wrap;
+  background-position: right;
+  background-image: url(../images/inicio/fondoVideo8.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+
+
+.header__nombre{
+  text-align:center;
+  color: #faa406;
+  letter-spacing: 10px;
+  font-size: 4rem;
+  font-family: 'Road Rage', cursiv
+}
+
+
+.header__lema{
+  text-align:center;
+  color: #faa406;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  
+}
+.separador{
+      background: chartreuse;
+      height: 2px;
+}
+.header__nav{
+  display:grid;
+  grid-template-columns: 3.5fr 1fr;
+  justify-items: center;
+  background-color: black ;
+  align-items: center;
+
+}
+.header__lista{
+  display:flex;
+  justify-self: flex-end;
+  list-style:none;
+
+}
+.header__navItem{
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 1.5rem ;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color:#ffffff;
+  }
+.header__redes{
+  display:flex;
+  justify-self: end;  
+  padding:0.2px;   
+}
+.header__redesItem{
+  padding:0.1px; 
+}
+.main{
+      background-color: black;
+}
+.main__hero{
+    display:grid;
+    grid-template-areas:
+    "bienvenidos"
+    "carrousel";
+    padding: 3rem 6rem 8rem 6rem;
+}
+.main__bienvenidos{
+    grid-area: bienvenidos;
+    color: #F17A3A;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.carousel {
+  width: 50%;
+  justify-self: center;
+}
+
+
+.main__contenedorImagenes{    
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main__imagenes{
+  width: 90%; 
+  padding: 20px;
+  grid-row: 1;
+
+}
+.main__imgNombre {
+  grid-row: 2;
+  color: #ffffff;
+  padding-left: 20px;
+
+}
+.main__imgPrecio{
+  color: #ffffff;
+  padding-left: 20px;
+
+}
+.main__videoParrafo{
+  display: grid;
+  grid-template-areas: "parrafo video";
+  grid-template-columns: repeat(2,2fr);
+}
+.main__contenedorParrafo{
+  grid-area: parrafo;
+}
+.main__video{
+  grid-area: video;
+}
+.main__parrafo{
+  color: #ffffff;
+}
+
+/*respaldo estilosN*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Fuzzy+Bubbles:wght@700&family=Lato&family=Road+Rage&display=swap');
+/*
+
+TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+
+
+
+*/
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+  }
+  .header{
+    background-position: right;
+    background-image: url(../images/inicio/fondoVideo8.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+  }
+
+.header__nombre{
+    letter-spacing: 15px;
+    font-size: 4rem;
+    font-family: 'Road Rage', cursive;
+  
+}
+.header__lema{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+
+  }
+  
+.separador{
+    opacity:100;
+    margin: 0px;
+    height: 8px !important;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,193,7,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,193,7,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,193,7,1) 50%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-2x {
+    0% {
+      background:rgba(255,193,7,1) ;
+    }
+    100% {
+      background:rgba(0,0,0,1) ;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: rgba(0,0,0,1);
+    }
+    100% {
+      background: rgba(255,193,7,1);
+    }
+  }
+  
+
+.header__redesItem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main__bienvenidos{
+    font-family: 'Fuzzy Bubbles', cursive;
+
+}
+.main__carousel{
+    height: 83vh;
+
+}
+.carousel__img{
+    object-fit: cover;
+    height: 80vh;
+
+}
+
+.main__contenedorImagenes{    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}  
+.main__imagenes{
+    width: 80%; 
+    grid-row: 1;
+  
+  }
+  .main__imgNombre {
+    grid-row: 2;
+  }
+  .main__imgPrecio{
+    color: #ffc107;
+  
+  }
+  
