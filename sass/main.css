@@ -6,18 +6,29 @@
           box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .header {
   background-position: right;
   background-image: url(../images/inicio/fondoVideo8.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: black;
+  color: #ffc107;
 }
 
 .header__nombre {
-  letter-spacing: 15px;
+  letter-spacing: 1vh;
   font-size: 4rem;
   font-family: 'Road Rage', cursive;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 900;
 }
 
 .header__lema {
@@ -26,11 +37,22 @@
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
+.header__nav {
+  background-color: #ffc107;
+}
+
 .header__redesItem {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .separador {
@@ -66,6 +88,13 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .main__bienvenidos {
   font-family: 'Fuzzy Bubbles', cursive;
 }
@@ -87,10 +116,15 @@
       grid-template-columns: repeat(4, 1fr);
 }
 
-.main__boxImg__img {
+.main__boxImg--img {
   width: 80%;
   -ms-grid-row: 1;
   grid-row: 1;
+  border: 4px solid white;
+}
+
+.main__boxImg--stickers {
+  gap: 1rem;
 }
 
 .main__imgNombre {
@@ -121,6 +155,37 @@
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: video;
+  display: block;
+  margin: auto;
   width: 80%;
+}
+
+@media screen and (max: 425px) {
+  .main {
+    display: block;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer {
+  background-color: black;
+  margin: auto;
+}
+
+.footer__contacto {
+  color: #ffc107;
+  text-align: center;
+}
+
+@media screen and (max: 425px) {
+  .main {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

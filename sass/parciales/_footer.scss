@@ -1,4 +1,37 @@
-@import "../parciales/vars";
+@import "./reset";
+@import "./vars";
+@import "./breakpoints"
 
-.footer{
+footer{
+    background-color: $color-fondo;
+    margin: auto;
+    
+
+    &__contacto{
+        color: $color-principal;
+        text-align: center
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
+
+
+
+
+
+
+
+

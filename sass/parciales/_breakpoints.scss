@@ -1,0 +1,29 @@
+
+@media screen and (max:425px) {
+    .header{
+        
+        color:blanchedalmond;
+
+
+
+    }
+    .main{
+        
+        &__boxImg{
+            display: block;
+
+        }
+        
+    }
+
+    .footer{
+        display: block;
+        margin: auto;
+
+        &__redes{
+            display:grid;
+
+        }
+
+    }
+}
