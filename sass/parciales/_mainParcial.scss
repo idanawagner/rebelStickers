@@ -1,11 +1,14 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints"
+@import "./breakpoints";
 
-main{
+.main{
+    background-color: $color-fondo;
     &__bienvenidos{
         font-family: 'Fuzzy Bubbles', cursive;
+        font-size: xx-large;
     }
+    
     &__carousel{
         height: 83vh;
 
@@ -13,11 +16,17 @@ main{
             object-fit: cover;
             height: 80vh;
         }
+        &--imgPromos{
+            height: 89vh;
+            object-fit: contain;
+            width: 70vh;
+            margin: auto;
+
+        }
     }
     &__boxImg{    
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-     
         &--img{
             width: 80%; 
             grid-row: 1;
@@ -25,6 +34,11 @@ main{
         }
         &--stickers{
             gap: 1rem;
+            padding: 4rem;
+        }
+        &--carta{
+            width: 90%;
+           
         }
         
     }
@@ -35,20 +49,47 @@ main{
     &__imgPrecio{
         color: $color-principal;
     }
+    &__nosotros {
+        padding: 5vh;
+    }
     &__videoParrafo{
         display: grid;
         grid-template-areas: "parrafo video";
         grid-template-columns: 2fr;
     }
+
     &__contenedorParrafo{
         grid-area: parrafo;
+        grid-row: 1;
+        grid-column: 1;
     }
     &__video{
         grid-area: video;
         display:block;
         margin: auto;
         width: 80%;
+        grid-row: 1;
+        grid-column: 2;
     }
+    &__dudas{
+        color: $color-principal;
+        font-weight: 500;
+        display: grid;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;   
     
+        &--titulo {
+            padding: 2rem;
+            
+        }
+        &--boxpreg {
+            padding-left: 20rem;
+            padding-right: 20rem;
+        }
+        &--preg{
+            padding: 2rem;
+        }
+
+    }
 }
-    

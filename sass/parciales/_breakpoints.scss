@@ -1,29 +1,53 @@
+@import "./reset";
+@import "./vars";
 
-@media screen and (max:425px) {
-    .header{
-        
-        color:blanchedalmond;
-
-
-
+@media screen and (max-width:425px) {
+    .logoRS {
+        width: 80%;
     }
+
     .main{
         
         &__boxImg{
             display: block;
+            &--stickers{
+                padding: 2rem;
+            }
+            &--carta {
+                margin-bottom: 13px;
+                margin-top: 13px;
+            }
+        }
+        &__nosotros {
+            flex-wrap: wrap;
+            display: flex;
+        }
+        &__videoParrafo {
+            display: block;
 
         }
-        
+        &__carousel--imgPromos {
+            height: 52vh;
+            width: 37vh;
+        }
+    }
+    .btn{
+        padding: 0px;
     }
 
     .footer{
         display: block;
         margin: auto;
 
-        &__redes{
-            display:grid;
-
+        &__contenedor {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5rem;
         }
 
+        &__boxLogo{
+            text-align: center;
+
+         }
     }
 }

@@ -1,17 +1,41 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints"
+@import "./breakpoints";
 
-footer{
-    background-color: $color-fondo;
-    margin: auto;
-    
-
+.footer{
+    background-color:$color-fondo;
+    margin:auto;
     &__contacto{
-        color: $color-principal;
-        text-align: center
-    }
+        color:$color-principal;
+        text-align: center;
+        padding-top: 5vh;
 
+    }
+    &__form{
+        display: flex;
+        justify-content: center;
+        border-radius: 0.50rem;
+        font-weight: 700;
+    }
+    &__contenedor{
+        display: flex;
+        margin-top: 1rem;
+        padding: 2.5rem;
+        align-items: center;
+        justify-content: space-between
+    }
+    &__redes{
+        display: grid;
+        grid-template-columns: repeat(3,13vh);    
+       
+    }
+    &__redesItems{
+        justify-self: center;
+    }
+    &__boxLogo{
+        text-align: right
+    }
+    
 
 
 

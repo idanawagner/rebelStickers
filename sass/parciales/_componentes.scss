@@ -1,9 +1,8 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints"
-
+@import "./breakpoints";
 .logoRS{
-  
+  border-radius: 50%;
 }
 .separador{
     opacity:100;
@@ -35,5 +34,15 @@
       background: rgba(255,193,7,1);
     }
   }
-  
+  .boton{
+    background-color:$color-principal;
+    color: $color-fondo;
+    font-weight: 700;
+    border: inset white;
+    border-radius: 0.25rem
+  }
+  .boton:hover{
+    background-color: $color-fondo;
+    color: $color-principal;
+  }
 

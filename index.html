@@ -12,8 +12,8 @@
 <body>
   <header class="header py-3"> <!--ENCABEZADO-->
         <section class="text-center ">
-            <div class="logoRS">
-                <img class="rounded-circle" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
+            <div class="">
+                <img class="logoRS" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
             </div>
             <div>
                  <h1 class="header__nombre">REBEL STICKERS</h1>
@@ -93,7 +93,7 @@
                   </nav>
      <hr class="separador color-change-2x">
   </header> <!--FIN DEL ENCABEZADO-->
-    <main class="bg-black"><!--CONENIDO DE LA PAGINA-->
+    <main class="main"><!--CONENIDO DE LA PAGINA-->
         <section class="text-center">
             <div class="main__bienvenidos text-white fs-3 fw-bold">
                 <h2>¡Bienvenidos Rebeldes!</h2>
@@ -124,7 +124,7 @@
         
         
           </section>
-        <hr class="separador">
+        <hr class="separador color-change-2x">
         <section>
             <div class="main__boxImg p-5">
                 <img class="main__boxImg--img" src="./images/stickers/mickey.jpg" alt="Evento">
@@ -141,98 +141,99 @@
                     <h4 class="main__imgPrecio">$50</h4>
             </div>
         </section>
-        <hr class="separador">
-        <section class="conteiner">
-                    <div class="main__videoParrafo p-3">
-                        <div class="main__contenedorParrafo align-middle">
-                            <h2 class="main__nosotros text-white text-center p-3">Un poquito sobre nosotros</h2>
-                            <span class="main__parrafo text-white text-center fw-normal ">
-                                ​Desde el primer día nuestra misión ha sido expandir nuestro catálogo de productos y mejorar la experiencia de nuestros clientes. Nos enorgullece ver hasta dónde hemos llegado, pero no podemos quedarnos ahí.
-                                Todas nuestras colecciones han sido cuidadosamente seleccionadas. Las opciones de entrega y los métodos de pago que ofrecemos son muy diversos y flexibles. Navega por nuestra galería de productos y vive la experiencia que sólo Rebel Stickers te puede ofrecer. No dudes en contactarnos en caso de tener alguna duda, comentario o sugerencia.
-                            </span>
-                            <video  class="main__video" src="./images/videoInicio.mp4" controls loop>
-                              <code>Tu navegador no soporta este archivo de video</code>
-                            </video>
-                          </div>
-                    </div>
+        <hr class="separador color-change-2x">
+        <section class="main__nosotros">
+              <div class="main__videoParrafo">
+                      <div class="main__contenedorParrafo align-middle">
+                        <h2 class="main__nosotros text-white text-center p-3">Un poquito sobre nosotros</h2>
+                        <span class="main__parrafo text-white text-center fw-normal ">
+                            ​Desde el primer día nuestra misión ha sido expandir nuestro catálogo de productos y mejorar la experiencia de nuestros clientes. Nos enorgullece ver hasta dónde hemos llegado, pero no podemos quedarnos ahí.
+                            Todas nuestras colecciones han sido cuidadosamente seleccionadas. Las opciones de entrega y los métodos de pago que ofrecemos son muy diversos y flexibles. Navega por nuestra galería de productos y vive la experiencia que sólo Rebel Stickers te puede ofrecer. No dudes en contactarnos en caso de tener alguna duda, comentario o sugerencia.
+                        </span>
+                      </div>
+                      <div>
+                          <video  class="main__video" src="./images/videoInicio.mp4" controls loop>
+                            <code>Tu navegador no soporta este archivo de video</code>
+                          </video>
+                      </div>
+              </div>
           </section>
     </main> <!-- /CONTENIDO DE LA PAGINA -->
-    <hr class="separador">
-    <footer><!--PIE DE PAGINA-->
+    <hr class="separador color-change-2x">
+    <footer class="footer"><!--PIE DE PAGINA-->
         <div class="footer__contacto">
           <div>
             <h4 class="">¿Dudas o consultas?</h4>
             <h5>Dejanos tu mensaje y te respondemos a la brevedad</h5>
           </div>
-          <form class="my-2 d-flex justify-content-center" action="#" method="get">
+          <form class="footer__form my-2 " action="#" method="get">
               <div class="row col-6">
                 <label class="my-2 p-0"for="userName">Nombre y Apellido</label>
-                <input type="text" name="user-name" id="userName" placeholder="Nombre y Apellido">
+                <input class="boton" type="text" name="user-name" id="userName" placeholder="Nombre y Apellido">
                 <br>
                 <label class="my-2 p-0" for="userEmail">Email</label>
-                <input type="email" name="user-email" id="userEmail" placeholder="Ingrese Email">
+                <input class="boton" type="email" name="user-email" id="userEmail" placeholder="Ingrese Email">
                 <br>
-                <textarea class="my-2" name="" id="" cols="30" rows="10" placeholder=""></textarea>
+                <textarea class="my-2 boton" name="" id="" cols="30" rows="10" placeholder=""></textarea>
                 <br>            
-                <input class="my-2" type="submit" value="Enviar">
+                <input class="my-2 boton" type="submit" value="Enviar">
               </div>
             </form>
             <h5 class="mb-5 mt-3 text-center text-warning">¡Gracias por tu mensaje!</h5>
         </div>
-     <hr class="separador">
+     <hr class="separador color-change-2x">
 
-        <div class="footer__redes row row-cols-3">
-            <nav>
-                <div class="footer__redesItem">
-                        <input   type="hidden" name="facebook">
-                        <a class="" href="https://www.facebook.com/Rebel-stickers-213276746784089/?ref=page_internal">
-                          <img class="footer__redesItem" src="./images/redes/facebook-footer.ico" alt="">
-                        </a>
-                      </div>
-                      <div class="footer__redesItem">
-                        <input type="hidden" name="instagram">
-                        <a class="" href="https://www.instagram.com/rebel_stickers/">
-                          <img class="footer__redesItem" src="./images/redes/instagram-footer.ico" alt="">
-                        </a>
-                      </div>
-                      <div class="footer__redesItem">
-                        <input   type="hidden" name="whatsapp">                   
-                        <a class="" href="https://api.whatsapp.com/send?phone=+5492915205685&text=Holis!%20Bienvenid*%20a%20la%20rebeli%C3%B3n,%20en%20un%20ratito%20respondemos%20tu%20mensaje!">
-                          <img class="footer__redesItem" src="./images/redes/whatsapp-footer.ico" alt="">
-                        </a>
-                      </div>
-                    </nav>
-              <nav>
-              <ul class="nav justify-content-center">
-                <li class="nav-item btn btn-warning">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item dropdown btn btn-warning">
-                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tienda
+        <div class="footer__contenedor">
+          <div class="footer__redes">
+                <div class="footer__redesItems">
+                  <input   type="hidden" name="facebook">
+                  <a class="" href="https://www.facebook.com/Rebel-stickers-213276746784089/?ref=page_internal">
+                    <img class="footer__redesItem" src="./images/redes/facebook-footer.ico" alt="">
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./categorias/tienda/stickers.html">Stickers</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./categorias/tienda/cuadernos.html">Cuadernos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./categorias/tienda/covers.html">Covers</a></li>
-                  </ul>
-                </li>
-            <li class="nav-item btn btn-warning">
-                  <a class="nav-link " href="./categorias/promos.html">Promos</a>
-                </li>
-                <li class="nav-item btn btn-warning">
-                  <a class="nav-link" href="./categorias/dudas.html">Dudas</a>
-                </li>
-                <li class="nav-item btn btn-warning">
-                  <a class="nav-link" href="./categorias/contacto.html">Contacto</a>
-                </li>
-
-              </ul>
-            </nav>
-            <div class="footer__contenedor text-end w-20">
-                <img class="rounded-circle m-3" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
+                </div>
+                <div class="footer__redesItems">
+                  <input type="hidden" name="instagram">
+                  <a class="" href="https://www.instagram.com/rebel_stickers/">
+                    <img class="footer__redesItem" src="./images/redes/instagram-footer.ico" alt="">
+                          </a>
+                  </div>
+                  <div class="footer__redesItems">
+                    <input   type="hidden" name="whatsapp">                   
+                    <a class="" href="https://api.whatsapp.com/send?phone=+5492915205685&text=Holis!%20Bienvenid*%20a%20la%20rebeli%C3%B3n,%20en%20un%20ratito%20respondemos%20tu%20mensaje!">
+                      <img class="footer__redesItem" src="./images/redes/whatsapp-footer.ico" alt="">
+                    </a>
+                  </div>
+            </div>
+              <nav>
+                <ul class="nav justify-content-center">
+                  <li class="nav-item btn btn-warning">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown btn btn-warning">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tienda
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./categorias/tienda/stickers.html">Stickers</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./categorias/tienda/cuadernos.html">Cuadernos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./categorias/tienda/covers.html">Covers</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item btn btn-warning">
+                        <a class="nav-link " href="./categorias/promos.html">Promos</a>
+                  </li>
+                  <li class="nav-item btn btn-warning">
+                        <a class="nav-link" href="./categorias/dudas.html">Dudas</a>
+                  </li>
+                  <li class="nav-item btn btn-warning">
+                        <a class="nav-link" href="./categorias/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </nav>
+            <div class="footer__boxLogo">
+                <img class="logoRS" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
             </div>
       </div>
         </footer><!-- /PIE DE PAGINA -->

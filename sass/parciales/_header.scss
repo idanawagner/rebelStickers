@@ -1,15 +1,14 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints"
-
-header{
+@import "./breakpoints";
+.header{
     background-position: right;
     background-image:url(../images/inicio/fondoVideo8.jpg);
     background-repeat:no-repeat;
     background-size:contain;
     background-color:$color-fondo;
     color:$color-principal;
-
+    background-origin: content-box;
     &__nombre{
         letter-spacing: 1vh;
         font-size: 4rem;
@@ -27,6 +26,6 @@ header{
     }
     &__redesItem {
         display:grid;
-        grid-template-columns:repeat(4, 1fr);
+        grid-template-columns:repeat(4,1fr);
     }
 }
