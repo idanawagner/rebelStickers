@@ -3,10 +3,10 @@
 @import "./breakpoints";
 
 .footer{
-    background-color:$color-fondo;
+    background-color:map-get($style,color-fondo);
     margin:auto;
     &__contacto{
-        color:$color-principal;
+        color:map-get($style,color-principal);
         text-align: center;
         padding-top: 5vh;
 

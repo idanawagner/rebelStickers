@@ -6,8 +6,8 @@
     background-image:url(../images/inicio/fondoVideo8.jpg);
     background-repeat:no-repeat;
     background-size:contain;
-    background-color:$color-fondo;
-    color:$color-principal;
+    background-color:map-get($style,color-fondo);
+    color:map-get($style,color-principal);
     background-origin: content-box;
     &__nombre{
         letter-spacing: 1vh;
@@ -22,7 +22,7 @@
         font-family:'Fuzzy Bubbles', cursive;
     }
     &__nav{
-        background-color:$color-principal;
+        background-color:map-get($style,color-principal);
     }
     &__redesItem {
         display:grid;

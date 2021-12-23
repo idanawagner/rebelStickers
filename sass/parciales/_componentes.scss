@@ -20,7 +20,7 @@
 }
 @-webkit-keyframes color-change-2x {
     0% {
-      background:rgba(255,193,7,1) ;
+      background:map-get($style,color-principal) ;
     }
     100% {
       background:rgba(0,0,0,1) ;
@@ -31,18 +31,18 @@
       background: rgba(0,0,0,1);
     }
     100% {
-      background: rgba(255,193,7,1);
+      background: map-get($style,color-principal);
     }
   }
   .boton{
-    background-color:$color-principal;
-    color: $color-fondo;
+    background-color:map-get($style,color-principal);
+    color: map-get($style,color-fondo);
     font-weight: 700;
     border: inset white;
     border-radius: 0.25rem
   }
   .boton:hover{
-    background-color: $color-fondo;
-    color: $color-principal;
+    background-color: map-get($style,color-fondo);
+    color: map-get($style,color-principal);
   }
 

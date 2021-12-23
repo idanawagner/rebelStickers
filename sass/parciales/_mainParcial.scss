@@ -3,7 +3,7 @@
 @import "./breakpoints";
 
 .main{
-    background-color: $color-fondo;
+    background-color: map-get($style,color-fondo);
     &__bienvenidos{
         font-family: 'Fuzzy Bubbles', cursive;
         font-size: xx-large;
@@ -24,6 +24,7 @@
 
         }
     }
+
     &__boxImg{    
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -44,10 +45,10 @@
     }
     &__imgNombre {
         grid-row: 2;
-        color: $color-principal;
+        color: map-get($style,color-principal);
     }
     &__imgPrecio{
-        color: $color-principal;
+        color: map-get($style,color-principal);
     }
     &__nosotros {
         padding: 5vh;
@@ -70,9 +71,11 @@
         width: 80%;
         grid-row: 1;
         grid-column: 2;
+    
     }
+    /*ESTILOS PAGINA DUDAS*/
     &__dudas{
-        color: $color-principal;
+        color: map-get($style,color-principal);
         font-weight: 500;
         display: grid;
         text-align: center;
@@ -80,7 +83,7 @@
         padding: 1rem;   
     
         &--titulo {
-            padding: 2rem;
+            padding: map-get($style,padding);
             
         }
         &--boxpreg {
@@ -88,7 +91,7 @@
             padding-right: 20rem;
         }
         &--preg{
-            padding: 2rem;
+            padding: map-get($style,padding);
         }
 
     }
