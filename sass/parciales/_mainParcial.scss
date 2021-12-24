@@ -1,7 +1,6 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints";
-
+@import "./media-queries";
 .main{
     background-color: map-get($style,color-fondo);
     &__bienvenidos{
@@ -21,13 +20,22 @@
             object-fit: contain;
             width: 70vh;
             margin: auto;
+            @include movil{
+                height: 52vh;
+                width: 37vh;
+    
+            }
 
         }
     }
-
     &__boxImg{    
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        @include movil{
+            display: block;
+            text-align: center;
+
+        }
         &--img{
             width: 80%; 
             grid-row: 1;
@@ -36,9 +44,19 @@
         &--stickers{
             gap: 1rem;
             padding: 4rem;
+            text-align: center;
+            @include movil{
+                display: block;
+                flex-wrap: wrap;
+                padding: 3rem;
+            }
         }
         &--carta{
             width: 90%;
+            @include movil{
+                margin: auto;
+                margin-bottom: 1rem;
+            }
            
         }
         
@@ -52,11 +70,18 @@
     }
     &__nosotros {
         padding: 5vh;
+        @include movil{
+            flex-wrap: wrap;
+            display: flex;
+        }
     }
     &__videoParrafo{
         display: grid;
         grid-template-areas: "parrafo video";
         grid-template-columns: 2fr;
+        @include movil{
+            display: block;
+        }
     }
 
     &__contenedorParrafo{
@@ -95,4 +120,18 @@
         }
 
     }
+
+
 }
+/*PRODUCTOS TIENDA*/
+
+@each $sticker in sticker-1, sticker-2, sticker-3, sticker-4, sticker-5, sticker-6, sticker-7, sticker-8{
+    .main__boxImg--#{$sticker}{
+        background-image: url("../images/stickers/#{$sticker}.jpg");
+        margin: 1rem;
+        background-position: center;
+        height: 30vh;
+        background-size: cover;
+    }
+}
+    

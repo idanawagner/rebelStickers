@@ -1,10 +1,14 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints";
+@import "./media-queries";
 
 .footer{
     background-color:map-get($style,color-fondo);
     margin:auto;
+    @include movil{
+        display: block;
+        margin: auto;
+    }
     &__contacto{
         color:map-get($style,color-principal);
         text-align: center;
@@ -22,7 +26,12 @@
         margin-top: 1rem;
         padding: 2.5rem;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        @include movil{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5rem;
+        }
     }
     &__redes{
         display: grid;
@@ -33,7 +42,11 @@
         justify-self: center;
     }
     &__boxLogo{
-        text-align: right
+        text-align: right;
+        @include movil{
+            text-align: center;
+        }
+    
     }
     
 

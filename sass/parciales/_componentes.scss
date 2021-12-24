@@ -1,8 +1,12 @@
 @import "./reset";
 @import "./vars";
-@import "./breakpoints";
+@import "./media-queries";
+
 .logoRS{
-  border-radius: 50%;
+    border-radius: 50%;
+    @include movil{
+      width: 50%;
+  }
 }
 .separador{
     opacity:100;
