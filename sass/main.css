@@ -42,7 +42,7 @@
   background-color: #ffc107;
 }
 
-.header__redesItem {
+.header__redesItem, .main__boxImg {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -112,6 +112,12 @@
   color: #ffc107;
 }
 
+/*TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+*/
 * {
   margin: 0;
   padding: 0;
@@ -155,10 +161,7 @@
 }
 
 .main__boxImg {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  padding: 3rem;
 }
 
 @media screen and (max-width: 425px) {
@@ -272,17 +275,13 @@
   padding: 1rem;
 }
 
-.main__dudas--titulo {
+.main__dudas--titulo .main__dudas--preg {
   padding: 2rem;
 }
 
 .main__dudas--boxpreg {
   padding-left: 20rem;
   padding-right: 20rem;
-}
-
-.main__dudas--preg {
-  padding: 2rem;
 }
 
 /*PRODUCTOS TIENDA*/
