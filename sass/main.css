@@ -42,11 +42,18 @@
   background-color: #ffc107;
 }
 
-.header__redesItem, .main__boxImg {
+.header__redesItem {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+  .header__redesItem {
+    grid-gap: 1rem;
+    justify-items: center;
+  }
 }
 
 * {
@@ -130,9 +137,30 @@ font-family: 'Road Rage', cursive;
   /*ESTILOS PAGINA DUDAS*/
 }
 
+.main__boxCarousel {
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+  display: -ms-grid;
+  display: grid;
+}
+
 .main__bienvenidos {
   font-family: 'Fuzzy Bubbles', cursive;
-  font-size: xx-large;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  background: -webkit-linear-gradient(#f63735, #ffc107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 425px) {
+  .main__bienvenidos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 2rem;
+  }
 }
 
 .main__carousel {
@@ -143,6 +171,14 @@ font-family: 'Road Rage', cursive;
   -o-object-fit: cover;
      object-fit: cover;
   height: 80vh;
+}
+
+@media screen and (max-width: 425px) {
+  .main__carousel__img .main__carousel__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 60vh;
+  }
 }
 
 .main__carousel--imgPromos {
@@ -161,6 +197,10 @@ font-family: 'Road Rage', cursive;
 }
 
 .main__boxImg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   padding: 3rem;
 }
 
@@ -275,13 +315,18 @@ font-family: 'Road Rage', cursive;
   padding: 1rem;
 }
 
-.main__dudas--titulo .main__dudas--preg {
-  padding: 2rem;
+.main__dudas--titulo {
+  padding: 3rem;
+  font-size: 4rem;
 }
 
-.main__dudas--boxpreg {
-  padding-left: 20rem;
-  padding-right: 20rem;
+.main__dudas--boxPreg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+  padding: 2rem;
 }
 
 /*PRODUCTOS TIENDA*/

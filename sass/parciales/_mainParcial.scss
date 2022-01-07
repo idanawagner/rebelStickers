@@ -11,9 +11,25 @@ font-family: 'Road Rage', cursive;
 @import "./media-queries";
 .main{
     background-color: map-get($style,color-fondo);
+    
+    &__boxCarousel {
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+        display: grid;
+    }
     &__bienvenidos{
         font-family: 'Fuzzy Bubbles', cursive;
-        font-size: xx-large;
+        font-size: 3rem;
+        font-weight: bold;
+        color: map-get($style, color-claro );
+        background: -webkit-linear-gradient(#f63735, #ffc107);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include movil{
+            flex-wrap: wrap;
+            font-size: 2rem;
+        }
     }
     
     &__carousel{
@@ -22,6 +38,12 @@ font-family: 'Road Rage', cursive;
         &__img{
             object-fit: cover;
             height: 80vh;
+            @include movil{
+                .main__carousel__img {
+                    object-fit: contain;
+                    height: 60vh;
+                }
+            }
         }
         &--imgPromos{
             height: 89vh;
@@ -37,7 +59,8 @@ font-family: 'Road Rage', cursive;
         }
     }
     &__boxImg{
-        @extend .header__redesItem; 
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
         padding: 3rem;
         @include movil{
             display: block;
@@ -115,24 +138,24 @@ font-family: 'Road Rage', cursive;
         gap: 1rem;
         padding: 1rem;   
     
-        &--titulo &--preg{
-            padding: map-get($style,padding);
+        &--titulo{
+            padding: 3rem;
+            font-size: 4rem;
             
         }
-        &--boxpreg {
-            padding-left: 20rem;
-            padding-right: 20rem;
+        &--boxPreg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 6rem;
+            padding: 2rem;
         }
-     
-        
-
     }
 
 
 }
 /*PRODUCTOS TIENDA*/
 
-@each $sticker in sticker-1, sticker-2, sticker-3, sticker-4, sticker-5, sticker-6, sticker-7, sticker-8{
+@each $sticker in $mapStickers{
     .main__boxImg--#{$sticker}{
         background-image: url("../images/stickers/#{$sticker}.jpg");
         margin: 1rem;
