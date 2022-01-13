@@ -42,17 +42,31 @@
   background-color: #ffc107;
 }
 
+@media screen and (max-width: 425px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .header__redesItem {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 @media screen and (max-width: 768px) {
   .header__redesItem {
     grid-gap: 1rem;
     justify-items: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 
@@ -241,6 +255,7 @@ font-family: 'Road Rage', cursive;
   .main__boxImg--carta {
     margin: auto;
     margin-bottom: 1rem;
+    height: 20rem;
   }
 }
 
@@ -428,13 +443,21 @@ font-family: 'Road Rage', cursive;
           justify-content: center;
   border-radius: 0.50rem;
   font-weight: 700;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.footer__form--gracias {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #ffc107;
 }
 
 .footer__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1rem;
   padding: 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -458,8 +481,14 @@ font-family: 'Road Rage', cursive;
 .footer__redes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (13vh)[3];
-      grid-template-columns: repeat(3, 13vh);
+  -ms-grid-columns: (6rem)[3];
+      grid-template-columns: repeat(3, 6rem);
+}
+
+@media screen and (max-width: 425px) {
+  .footer__redes {
+    display: inline;
+  }
 }
 
 .footer__redesItems {

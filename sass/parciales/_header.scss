@@ -23,13 +23,17 @@
     }
     &__nav{
         background-color:map-get($style,color-principal);
+        @include movil{
+            display:flex;
+            flex-direction: column-reverse;
+        }
     }
     &__redesItem {
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
+        display: inline-flex;
         @include tablet{
             grid-gap: 1rem;
             justify-items: center;
+            align-self: start;
         }
     }
 
