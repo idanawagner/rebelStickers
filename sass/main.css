@@ -90,7 +90,7 @@
 .separador {
   opacity: 100;
   margin: 0px;
-  height: 8px !important;
+  height: 6px !important;
   background: black;
   background: -webkit-gradient(linear, right top, left top, from(black), color-stop(50%, #ffc107), to(black));
   background: linear-gradient(270deg, black 0%, #ffc107 50%, black 100%);
@@ -330,9 +330,21 @@ font-family: 'Road Rage', cursive;
   padding: 1rem;
 }
 
+@media screen and (max-width: 425px) {
+  .main__dudas {
+    display: inline;
+  }
+}
+
 .main__dudas--titulo {
   padding: 3rem;
   font-size: 4rem;
+}
+
+@media screen and (max-width: 425px) {
+  .main__dudas--titulo {
+    font-size: 3rem;
+  }
 }
 
 .main__dudas--boxPreg {
@@ -342,6 +354,12 @@ font-family: 'Road Rage', cursive;
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 6rem;
   padding: 2rem;
+}
+
+@media screen and (max-width: 425px) {
+  .main__dudas--boxPreg {
+    display: block;
+  }
 }
 
 /*PRODUCTOS TIENDA*/

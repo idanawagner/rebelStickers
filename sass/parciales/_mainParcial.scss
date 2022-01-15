@@ -138,10 +138,15 @@ font-family: 'Road Rage', cursive;
         text-align: center;
         gap: 1rem;
         padding: 1rem;   
-    
+        @include movil{
+            display: inline;
+        }
         &--titulo{
             padding: 3rem;
             font-size: 4rem;
+            @include movil{
+                font-size:3rem;
+            }
             
         }
         &--boxPreg {
@@ -149,6 +154,9 @@ font-family: 'Road Rage', cursive;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 6rem;
             padding: 2rem;
+            @include movil{
+                display: block;
+            }
         }
     }
 
