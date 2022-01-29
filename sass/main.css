@@ -1,3 +1,10 @@
+/*TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&family=Fuzzy+Bubbles:wght@700&family=Lato&family=Road+Rage&display=swap");
 * {
   margin: 0;
@@ -13,7 +20,15 @@
           box-sizing: border-box;
 }
 
-.header {
+/*TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+.header__encabezado {
+  padding: 1rem;
   background-position: right;
   background-image: url(../images/inicio/fondoVideo8.jpg);
   background-repeat: no-repeat;
@@ -21,6 +36,13 @@
   background-color: black;
   color: #ffc107;
   background-origin: content-box;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__encabezado {
+    background-position: right bottom;
+  }
 }
 
 .header__nombre {
@@ -38,15 +60,24 @@
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
-.header__nav {
+.header__nav, .header__nav--submenu, .footer__nav, .footer__nav--subMenu {
   background-color: #ffc107;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-right: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 425px) {
-  .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.header__nav:hover, .header__nav--submenu:hover, .footer__nav:hover, .footer__nav--subMenu:hover {
+  color: #7f7e7c;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav, .header__nav--submenu, .footer__nav, .footer__nav--subMenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -54,19 +85,26 @@
   }
 }
 
+.header__nav--submenu {
+  padding: 11px;
+  margin: 0px;
+}
+
 .header__redesItem {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding: 0.25rem;
+  gap: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .header__redesItem {
     grid-gap: 1rem;
     justify-items: center;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
 }
 
@@ -77,6 +115,13 @@
           box-sizing: border-box;
 }
 
+/*TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 .logoRS {
   border-radius: 50%;
 }
@@ -128,17 +173,42 @@
   border-radius: 0.25rem;
 }
 
+.boton--sticker {
+  color: #ffc107;
+  background-color: #484847;
+  border-color: #7f7e7c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.boton--sticker:hover {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.boton--sticker:focus, .boton:focus {
+  z-index: 3;
+  border-color: #f9bb00b5;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem #f6f4ec59;
+          box-shadow: 0 0 0 0.25rem #f6f4ec59;
+}
+
 .boton:hover {
   background-color: black;
   color: #ffc107;
 }
 
-/*TEXTO
-font-family: 'Cairo', sans-serif;
-font-family: 'Fuzzy Bubbles', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Road Rage', cursive;
-*/
+.boton:not(.collapsed) {
+  color: #ffc107;
+  background-color: #484847;
+}
+
+.btn {
+  padding: 0.25rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -146,8 +216,16 @@ font-family: 'Road Rage', cursive;
           box-sizing: border-box;
 }
 
+/*TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 .main {
   background-color: black;
+  /*ESTILOS PAGINA PROMOS*/
   /*ESTILOS PAGINA DUDAS*/
 }
 
@@ -164,7 +242,7 @@ font-family: 'Road Rage', cursive;
   font-size: 3rem;
   font-weight: bold;
   color: white;
-  background: -webkit-linear-gradient(#f63735, #ffc107);
+  background: -webkit-linear-gradient(#ffc107, #fd0707);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -247,8 +325,15 @@ font-family: 'Road Rage', cursive;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main__boxImg--stickers {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .main__boxImg--carta {
-  width: 90%;
+  width: 95%;
 }
 
 @media screen and (max-width: 425px) {
@@ -286,7 +371,7 @@ font-family: 'Road Rage', cursive;
 .main__videoParrafo {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "parrafo video";
+      grid-template-areas: "video parrafo";
   -ms-grid-columns: 2fr;
       grid-template-columns: 2fr;
 }
@@ -299,17 +384,21 @@ font-family: 'Road Rage', cursive;
 
 .main__contenedorParrafo {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: parrafo;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: justify;
 }
 
 .main__video {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: video;
   display: block;
   margin: auto;
@@ -320,14 +409,53 @@ font-family: 'Road Rage', cursive;
   grid-column: 2;
 }
 
+.main__promos {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  .main__promos {
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem;
+  }
+}
+
+.main__promos--img {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  .main__promos--img {
+    border-top: groove white;
+  }
+}
+
+.main__promos--img:hover {
+  width: 30rem;
+}
+
+@media screen and (max-width: 425px) {
+  .main__promos--img:hover {
+    width: 150%;
+  }
+}
+
 .main__dudas {
   color: #ffc107;
+  background-color: black;
   font-weight: 500;
   display: -ms-grid;
   display: grid;
-  text-align: center;
+  text-align: start;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 425px) {
@@ -347,17 +475,13 @@ font-family: 'Road Rage', cursive;
   }
 }
 
-.main__dudas--boxPreg {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6rem;
+.main__dudas--acordeon {
+  background-color: black;
   padding: 2rem;
 }
 
 @media screen and (max-width: 425px) {
-  .main__dudas--boxPreg {
+  .main__dudas--acordeon {
     display: block;
   }
 }
@@ -367,64 +491,191 @@ font-family: 'Road Rage', cursive;
   background-image: url("../images/stickers/sticker-1.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-2 {
   background-image: url("../images/stickers/sticker-2.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-3 {
   background-image: url("../images/stickers/sticker-3.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-4 {
   background-image: url("../images/stickers/sticker-4.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-5 {
   background-image: url("../images/stickers/sticker-5.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-6 {
   background-image: url("../images/stickers/sticker-6.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-7 {
   background-image: url("../images/stickers/sticker-7.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main__boxImg--sticker-8 {
   background-image: url("../images/stickers/sticker-8.jpg");
   margin: 1rem;
   background-position: center;
-  height: 30vh;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-9 {
+  background-image: url("../images/stickers/sticker-9.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-10 {
+  background-image: url("../images/stickers/sticker-10.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-11 {
+  background-image: url("../images/stickers/sticker-11.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-12 {
+  background-image: url("../images/stickers/sticker-12.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-13 {
+  background-image: url("../images/stickers/sticker-13.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-14 {
+  background-image: url("../images/stickers/sticker-14.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-15 {
+  background-image: url("../images/stickers/sticker-15.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-16 {
+  background-image: url("../images/stickers/sticker-16.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-17 {
+  background-image: url("../images/stickers/sticker-17.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-18 {
+  background-image: url("../images/stickers/sticker-18.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-19 {
+  background-image: url("../images/stickers/sticker-19.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__boxImg--sticker-20 {
+  background-image: url("../images/stickers/sticker-20.jpg");
+  margin: 1rem;
+  background-position: center;
+  height: 40vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+  .modalSticker {
+    height: 60vh;
+  }
+}
+
+.kenburns-top {
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both;
 }
 
 * {
@@ -434,6 +685,13 @@ font-family: 'Road Rage', cursive;
           box-sizing: border-box;
 }
 
+/*TEXTO
+font-family: 'Cairo', sans-serif;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Road Rage', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 .footer {
   background-color: black;
   margin: auto;
@@ -512,6 +770,26 @@ font-family: 'Road Rage', cursive;
 .footer__redesItems {
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.footer__nav, .footer__nav--subMenu {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__nav, .footer__nav--subMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__nav--subMenu {
+  padding: 11px;
+  margin: 0px;
 }
 
 .footer__boxLogo {

@@ -2,13 +2,20 @@
 @import "./vars";
 @import "./media-queries";
 .header{
-    background-position: right;
-    background-image:url(../images/inicio/fondoVideo8.jpg);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-color:map-get($style,color-fondo);
-    color:map-get($style,color-principal);
-    background-origin: content-box;
+    &__encabezado{
+        padding: 1rem;
+        background-position: right;
+        background-image:url(../images/inicio/fondoVideo8.jpg);
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-color:map-get($style,color-fondo);
+        color:map-get($style,color-principal);
+        background-origin: content-box;
+        text-align: center;
+        @include tablet{
+           background-position: right bottom;
+        }
+    }
     &__nombre{
         letter-spacing: 1vh;
         font-size: 4rem;
@@ -23,17 +30,34 @@
     }
     &__nav{
         background-color:map-get($style,color-principal);
-        @include movil{
-            display:flex;
+        font-weight: 700;
+        font-size: 1.25rem;
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: map-get($style,fuente-menu);
+        color: map-get($style,color-fondo);
+        text-decoration: none;
+        &:hover{
+            color: #7f7e7c;
+        }
+        @include tablet{
             flex-direction: column-reverse;
+        }
+        &--submenu{
+            @extend .header__nav;
+            padding: 11px;
+            margin: 0px;
         }
     }
     &__redesItem {
         display: inline-flex;
+        padding: 0.25rem;
+        gap: 0.5rem;    
         @include tablet{
             grid-gap: 1rem;
             justify-items: center;
-            align-self: start;
+            align-self: end;
         }
     }
 

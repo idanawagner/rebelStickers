@@ -50,6 +50,22 @@
     &__redesItems{
         justify-self: center;
     }
+    &__nav{
+        @extend .header__nav;
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        @include portatil{
+            flex-direction: column;
+        }
+
+        &--subMenu{
+            @extend .footer__nav;
+            padding: 11px;
+            margin: 0px;
+        }
+
+    }
     &__boxLogo{
         text-align: right;
         @include movil{

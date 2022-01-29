@@ -14,11 +14,13 @@
 
 </head>
 <body>
-  <header class="header py-3"> <!--ENCABEZADO-->
-        <section class="text-center ">
-            <div class="">
-                <img class="logoRS" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
-            </div>
+  <header class="header"> <!--ENCABEZADO-->
+        <section class="header__encabezado ">
+          <div class="">
+            <a href="#">
+              <img class="logoRS" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
+            </a>
+          </div>
             <div>
                  <h1 class="header__nombre">REBEL STICKERS</h1>
             </div>
@@ -29,14 +31,14 @@
         </section>
                   
         <hr class="separador color-change-2x">
-        <nav class="header__nav navbar py-0 navbar-expand-lg navbar-light bg-gradient fw-bold fs-5 pe-3">
-              <div class="container-fluid p-0 justify-content-start">
+        <nav class="header__nav navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid p-0 justify-content-end">
                 <a class="navbar-brand" href="#"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
                   </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item">
                       <a class="nav-link active " aria-current="page" href="./index.html">Inicio</a>
                     </li>
@@ -44,12 +46,12 @@
                       <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Tienda
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="./categorias/tienda/stickers.html">Stickers</a></li>
+                      <ul class="dropdown-menu header__nav--submenu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item fw-bold" href="./categorias/tienda/stickers.html">Stickers</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./categorias/tienda/cuadernos.html">Cuadernos</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./categorias/tienda/cuadernos.html">Cuadernos</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./categorias/tienda/covers.html">Covers</a></li>
+                        <li><a class="dropdown-item fw-bold" href="./categorias/tienda/covers.html">Covers</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
@@ -63,32 +65,30 @@
                     </li>
                   </ul>
                   <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control m-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
+                    <button class="btn btn-outline-success m-2" type="submit">
+                      <img src="./images/redes/search.ico" alt="buscar">
+                    </button>
                   </form>
                 </div>
               </div>
               <div class="header__redesItem">
                   <div>
-                    <input   type="hidden" name="facebook">
                     <a class="" href="https://www.facebook.com/Rebel-stickers-213276746784089/?ref=page_internal">
                       <img class="" src="./images/redes/facebook.ico" alt="facebook">
                     </a>
                   </div>
                   <div>
-                    <input type="hidden" name="instagram">
                     <a class="" href="https://www.instagram.com/rebel_stickers/">
                       <img class="" src="./images/redes/instagram.ico" alt="instagram">
                     </a>
                   </div>
                   <div>
-                    <input   type="hidden" name="whatsapp">                   
                     <a class="" href="https://api.whatsapp.com/send?phone=+5492915205685&text=Holis!%20Bienvenid*%20a%20la%20rebeli%C3%B3n,%20en%20un%20ratito%20respondemos%20tu%20mensaje!">
                       <img class="" src="./images/redes/whatsapp.ico" alt="whatsapp">
                     </a>
                   </div>
                   <div>
-                    <input   type="hidden" name="carrito">                   
                     <a class="" href="#">
                       <img class="" src="./images/redes/tienda.ico" alt="carrito">
                     </a>
@@ -146,18 +146,18 @@
         </section>
         <hr class="separador color-change-2x">
         <section class="main__nosotros">
+          <h2 class="main__nosotros text-white text-center p-3">Un poquito sobre nosotros</h2>
               <div class="main__videoParrafo">
+                       <div>
+                           <video  class="main__video" src="./images/videoInicio.mp4" controls loop>
+                             <code>Tu navegador no soporta este archivo de video</code>
+                           </video>
+                       </div>
                       <div class="main__contenedorParrafo align-middle">
-                        <h2 class="main__nosotros text-white text-center p-3">Un poquito sobre nosotros</h2>
                         <span class="main__parrafo text-white text-center fw-normal ">
                             ​Desde el primer día nuestra misión ha sido expandir nuestro catálogo de productos y mejorar la experiencia de nuestros clientes. Nos enorgullece ver hasta dónde hemos llegado, pero no podemos quedarnos ahí.
                             Todas nuestras colecciones han sido cuidadosamente seleccionadas. Las opciones de entrega y los métodos de pago que ofrecemos son muy diversos y flexibles. Navega por nuestra galería de productos y vive la experiencia que sólo Rebel Stickers te puede ofrecer. No dudes en contactarnos en caso de tener alguna duda, comentario o sugerencia.
                         </span>
-                      </div>
-                      <div>
-                          <video  class="main__video" src="./images/videoInicio.mp4" controls loop>
-                            <code>Tu navegador no soporta este archivo de video</code>
-                          </video>
                       </div>
               </div>
           </section>
@@ -172,13 +172,10 @@
           <form class="footer__form" action="#" method="get">
               <div class="row">
                 <label class="my-2 p-0"for="userName">Nombre y Apellido</label>
-                <input class="boton" type="text" name="user-name" id="userName" placeholder="Nombre y Apellido">
-                <br>
+                <input class="boton" type="text" name="user-name" id="userName" placeholder="Nombre y Apellido" required> 
                 <label class="my-2 p-0" for="userEmail">Email</label>
-                <input class="boton" type="email" name="user-email" id="userEmail" placeholder="Ingrese Email">
-                <br>
-                <textarea class="my-2 boton" name="" id="" cols="30" rows="10" placeholder=""></textarea>
-                <br>            
+                <input class="boton" type="email" name="user-email" id="userEmail" placeholder="Ingrese Email"  required>
+                <textarea class="my-2 boton" name="" id="" cols="30" rows="10" placeholder="Escribe aquí tu consulta"  required></textarea>
                 <input class="my-2 boton" type="submit" value="Enviar">
               </div>
             </form>
@@ -189,52 +186,47 @@
         <div class="footer__contenedor">
           <div class="footer__redes">
                 <div class="footer__redesItems">
-                  <input   type="hidden" name="facebook">
                   <a class="" href="https://www.facebook.com/Rebel-stickers-213276746784089/?ref=page_internal">
                     <img class="footer__redesItem" src="./images/redes/facebook-footer.ico" alt="">
                   </a>
                 </div>
                 <div class="footer__redesItems">
-                  <input type="hidden" name="instagram">
                   <a class="" href="https://www.instagram.com/rebel_stickers/">
                     <img class="footer__redesItem" src="./images/redes/instagram-footer.ico" alt="">
                           </a>
                   </div>
                   <div class="footer__redesItems">
-                    <input   type="hidden" name="whatsapp">                   
                     <a class="" href="https://api.whatsapp.com/send?phone=+5492915205685&text=Holis!%20Bienvenid*%20a%20la%20rebeli%C3%B3n,%20en%20un%20ratito%20respondemos%20tu%20mensaje!">
                       <img class="footer__redesItem" src="./images/redes/whatsapp-footer.ico" alt="">
                     </a>
                   </div>
             </div>
-              <nav>
-                <ul class="nav justify-content-center">
-                  <li class="nav-item btn btn-warning">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown btn btn-warning">
-                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tienda
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="./categorias/tienda/stickers.html">Stickers</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./categorias/tienda/cuadernos.html">Cuadernos</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./categorias/tienda/covers.html">Covers</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item btn btn-warning">
-                        <a class="nav-link " href="./categorias/promos.html">Promos</a>
-                  </li>
-                  <li class="nav-item btn btn-warning">
-                        <a class="nav-link" href="./categorias/dudas.html">Dudas</a>
-                  </li>
-                  <li class="nav-item btn btn-warning">
-                        <a class="nav-link" href="./categorias/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </nav>
+            <nav class="">
+              <ul class="nav justify-content-center footer__nav">
+                <li class="nav-item btn">
+                  <a class="footer__nav active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown btn">
+                    <a class="footer__nav dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                    </a>
+                    <ul class="footer__nav dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="footer__nav--subMenu dropdown-item" href="./categorias/tienda/cuadernos.html">Cuadernos</a></li>
+                      <li><a class="footer__nav--subMenu dropdown-item" href="./categorias/tienda/stickers.html">Stickers</a></li>
+                      <li><a class="footer__nav--subMenu dropdown-item" href="./categorias/tienda/covers.html">Covers</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item btn">
+                      <a class="footer__nav" href="./categorias/promos.html">Promos</a>
+                </li>
+                <li class="nav-item btn">
+                      <a class="footer__nav" href="./categorias/dudas.html">Dudas</a>
+                </li>
+                <li class="nav-item btn">
+                      <a class="footer__nav" href="./categorias/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </nav>
             <div class="footer__boxLogo">
                 <img class="logoRS" src="./images/logoRS.jpeg" alt="Logo Rebel Stickers">
             </div>

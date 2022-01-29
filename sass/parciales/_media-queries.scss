@@ -9,3 +9,16 @@
         @content;
     }
 }
+@mixin portatil {
+    @media screen and (max-width:1024px) {
+        @content;
+        
+    }
+    
+}
+@mixin desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+    
+}

@@ -43,10 +43,42 @@
     color: map-get($style,color-fondo);
     font-weight: 700;
     border: inset white;
-    border-radius: 0.25rem
+    border-radius: 0.25rem;
+
+    &--sticker{
+        color: map-get($style,color-principal);
+        background-color: #484847;
+        border-color: #7f7e7c;
+        font-family: map-get($style ,fuente-menu );
+        font-weight: 600;
+        &:hover{
+            color: #212529;
+            background-color:map-get($style,color-principal);
+            border-color:map-get($style,color-principal);
+        }
+        &:focus{
+          z-index: 3;
+          border-color: #f9bb00b5;
+          outline: 0;
+          box-shadow: 0 0 0 0.25rem #f6f4ec59;
+        }
+        
+
+    
+    }
+    &:hover{
+      background-color: map-get($style,color-fondo);
+      color: map-get($style,color-principal);
+    }
+    &:focus{
+      @extend .boton--sticker:focus;
+    }
+    &:not(.collapsed){
+      color: map-get($style,color-principal );
+      background-color: #484847;
+    }
   }
-  .boton:hover{
-    background-color: map-get($style,color-fondo);
-    color: map-get($style,color-principal);
+  .btn{
+    padding: 0.25rem;
   }
 
