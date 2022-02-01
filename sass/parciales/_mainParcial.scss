@@ -26,15 +26,17 @@
     
     &__carousel{
         height: 83vh;
+        @include movil{
+            height: 25vh;
+        }
 
         &__img{
             object-fit: cover;
             height: 80vh;
             @include movil{
-                .main__carousel__img {
                     object-fit: contain;
-                    height: 60vh;
-                }
+                    height: 25vh;
+                
             }
         }
         &--imgPromos{
@@ -107,7 +109,7 @@
         display: grid;
         grid-template-areas: "video parrafo";
         grid-template-columns: 2fr;
-        @include movil{
+        @include tablet{
             display: block;
         }
     }
@@ -126,6 +128,9 @@
         width: 80%;
         grid-row: 1;
         grid-column: 2;
+        @include movil{
+            width: 100%;
+        }
     
     }
     /*ESTILOS PAGINA PROMOS*/

@@ -128,7 +128,7 @@ font-family: 'Roboto', sans-serif;
 
 @media screen and (max-width: 425px) {
   .logoRS {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -259,6 +259,12 @@ font-family: 'Roboto', sans-serif;
   height: 83vh;
 }
 
+@media screen and (max-width: 425px) {
+  .main__carousel {
+    height: 25vh;
+  }
+}
+
 .main__carousel__img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -266,10 +272,10 @@ font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 425px) {
-  .main__carousel__img .main__carousel__img {
+  .main__carousel__img {
     -o-object-fit: contain;
        object-fit: contain;
-    height: 60vh;
+    height: 25vh;
   }
 }
 
@@ -376,7 +382,7 @@ font-family: 'Roboto', sans-serif;
       grid-template-columns: 2fr;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .main__videoParrafo {
     display: block;
   }
@@ -407,6 +413,12 @@ font-family: 'Roboto', sans-serif;
   grid-row: 1;
   -ms-grid-column: 2;
   grid-column: 2;
+}
+
+@media screen and (max-width: 425px) {
+  .main__video {
+    width: 100%;
+  }
 }
 
 .main__promos {
