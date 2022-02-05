@@ -3,7 +3,6 @@
 @import "./media-queries";
 .main{
     background-color: map-get($style,color-fondo);
-    
     &__boxCarousel {
         text-align: center;
         padding: 2rem;
@@ -23,7 +22,6 @@
             font-size: 2rem;
         }
     }
-    
     &__carousel{
         height: 83vh;
         @include movil{
@@ -36,21 +34,9 @@
             @include movil{
                     object-fit: contain;
                     height: 25vh;
-                
             }
         }
-        &--imgPromos{
-            height: 89vh;
-            object-fit: contain;
-            width: 70vh;
-            margin: auto;
-            @include movil{
-                height: 52vh;
-                width: 37vh;
-    
-            }
 
-        }
     }
     &__boxImg{
         display:grid;
@@ -86,10 +72,7 @@
                 margin-bottom: 1rem;
                 height: 20rem;
             }
-           
         }
-        
-        
     }
     &__imgNombre {
         grid-row: 2;
@@ -155,35 +138,12 @@
             &:hover {
                 width: 30rem;
                 @include movil{
-                    width: 150%;
+
+                    width:18rem;
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
     /*ESTILOS PAGINA DUDAS*/
     &__dudas{
         color: map-get($style,color-principal);
@@ -192,7 +152,7 @@
         display: grid;
         text-align: start;
         gap: 1rem;
-        padding: 2rem;  
+        padding: 0rem;  
 
          
         @include movil{
@@ -215,8 +175,7 @@
         }
     }
 }
-/*PRODUCTOS TIENDA*/
-
+    /*PRODUCTOS TIENDA*/
 @each $sticker in $mapStickers{
     .main__boxImg--#{$sticker}{
         background-image: url("../images/stickers/#{$sticker}.jpg");
@@ -236,4 +195,14 @@
 .kenburns-top {
     -webkit-animation: kenburns-top 5s ease-out both;
             animation: kenburns-top 5s ease-out both;
+}
+/*ESTILOS PAGINA EN CONSTRUCCIÓN*/
+.pagConstruccion{
+    margin: 15rem;
+    @include movil{
+        margin: 2rem 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
 }

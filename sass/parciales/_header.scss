@@ -22,6 +22,9 @@
         font-family: 'Road Rage', cursive;
         flex-wrap: wrap;
         font-weight: 900;
+        @include movil{
+            font-size: 2.5rem;
+        }
     }
     &__lema{
         letter-spacing:2px;

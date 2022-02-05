@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*TEXTO
 font-family: 'Cairo', sans-serif;
 font-family: 'Fuzzy Bubbles', cursive;
@@ -52,6 +53,12 @@ font-family: 'Roboto', sans-serif;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-weight: 900;
+}
+
+@media screen and (max-width: 425px) {
+  .header__nombre {
+    font-size: 2.5rem;
+  }
 }
 
 .header__lema {
@@ -279,21 +286,6 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
-.main__carousel--imgPromos {
-  height: 89vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 70vh;
-  margin: auto;
-}
-
-@media screen and (max-width: 425px) {
-  .main__carousel--imgPromos {
-    height: 52vh;
-    width: 37vh;
-  }
-}
-
 .main__boxImg {
   display: -ms-grid;
   display: grid;
@@ -455,7 +447,7 @@ font-family: 'Roboto', sans-serif;
 
 @media screen and (max-width: 425px) {
   .main__promos--img:hover {
-    width: 150%;
+    width: 18rem;
   }
 }
 
@@ -467,7 +459,7 @@ font-family: 'Roboto', sans-serif;
   display: grid;
   text-align: start;
   gap: 1rem;
-  padding: 2rem;
+  padding: 0rem;
 }
 
 @media screen and (max-width: 425px) {
@@ -688,6 +680,21 @@ font-family: 'Roboto', sans-serif;
 .kenburns-top {
   -webkit-animation: kenburns-top 5s ease-out both;
   animation: kenburns-top 5s ease-out both;
+}
+
+/*ESTILOS PAGINA EN CONSTRUCCIÓN*/
+.pagConstruccion {
+  margin: 15rem;
+}
+
+@media screen and (max-width: 425px) {
+  .pagConstruccion {
+    margin: 2rem 1rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 * {
