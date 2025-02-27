@@ -1,208 +1,186 @@
 @import "./reset";
 @import "./vars";
 @import "./media-queries";
-.main{
-    background-color: map-get($style,color-fondo);
-    &__boxCarousel {
-        text-align: center;
-        padding: 2rem;
-        gap: 2rem;
-        display: grid;
-    }
-    &__bienvenidos{
-        font-family: 'Fuzzy Bubbles', cursive;
-        font-size: 3rem;
-        font-weight: bold;
-        color: map-get($style, color-claro );
-        background: -webkit-linear-gradient(#ffc107, #fd0707);
-        -webkit-background-clip:text;
-        -webkit-text-fill-color: transparent;
-        @include movil{
-            flex-wrap: wrap;
-            font-size: 2rem;
-        }
-    }
-    &__carousel{
-        height: 83vh;
-        @include movil{
-            height: 25vh;
-        }
+.main {
+  background-color: map-get($style, color-fondo);
+  &__boxCarousel {
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+    display: grid;
+  }
 
-        &__img{
-            object-fit: cover;
-            height: 80vh;
-            @include movil{
-                    object-fit: contain;
-                    height: 25vh;
-            }
-        }
-
+  &__carousel {
+    height: 83vh;
+    @include movil {
+      height: 25vh;
     }
-    &__boxImg{
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
+
+    &__img {
+      object-fit: contain;
+      height: 80vh;
+      @include movil {
+        object-fit: contain;
+        height: 25vh;
+      }
+    }
+  }
+  &__boxImg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem;
+    @include movil {
+      display: block;
+      text-align: center;
+    }
+    &--img {
+      width: 80%;
+      grid-row: 1;
+      border: 4px solid white;
+    }
+    &--stickers {
+      gap: 1rem;
+      padding: 4rem;
+      text-align: center;
+      @include movil {
+        display: block;
+        flex-wrap: wrap;
         padding: 3rem;
-        @include movil{
-            display: block;
-            text-align: center;
-
-        }
-        &--img{
-            width: 80%; 
-            grid-row: 1;
-            border: 4px solid white;
-        }
-        &--stickers{
-            gap: 1rem;
-            padding: 4rem;
-            text-align: center;
-            @include movil{
-                display: block;
-                flex-wrap: wrap;
-                padding: 3rem;
-            }
-            @include tablet{
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        &--carta{
-            width: 95%;
-            @include movil{
-                margin: auto;
-                margin-bottom: 1rem;
-                height: 20rem;
-            }
-        }
+      }
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
-    &__imgNombre {
-        grid-row: 2;
-        color: map-get($style,color-principal);
-    }
-    &__imgPrecio{
-        color: map-get($style,color-principal);
-    }
-    &__nosotros {
-        padding: 5vh;
-        @include movil{
-            flex-wrap: wrap;
-            display: flex;
-        }
-    }
-    &__videoParrafo{
-        display: grid;
-        grid-template-areas: "video parrafo";
-        grid-template-columns: 2fr;
-        @include tablet{
-            display: block;
-        }
-    }
-
-    &__contenedorParrafo{
-        grid-area: parrafo;
-        grid-row: 1;
-        grid-column: 1;
-        align-self: center;
-        text-align: justify;
-    }
-    &__video{
-        grid-area: video;
-        display:block;
+    &--carta {
+      width: 95%;
+      @include movil {
         margin: auto;
-        width: 80%;
-        grid-row: 1;
-        grid-column: 2;
-        @include movil{
-            width: 100%;
-        }
-    
+        margin-bottom: 1rem;
+        height: 20rem;
+      }
     }
-    /*ESTILOS PAGINA PROMOS*/
-    &__promos{
-        padding: 1rem;
-        display: grid;
-        grid-template-columns:repeat(3,2fr) ;
-        gap: 1rem;
-        @include movil{
-            display: block;
-            flex-wrap: wrap;
-            padding: 2rem;
-            
+  }
+  &__imgNombre {
+    grid-row: 2;
+    color: map-get($style, color-principal);
+  }
+  &__imgPrecio {
+    color: map-get($style, color-principal);
+  }
+  &__nosotros {
+    padding: 5vh;
+    @include movil {
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }
+  &__videoParrafo {
+    display: grid;
+    grid-template-areas: "video parrafo";
+    grid-template-columns: 2fr;
+    @include tablet {
+      display: block;
+    }
+  }
 
-            
+  &__contenedorParrafo {
+    grid-area: parrafo;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    text-align: justify;
+  }
+  &__video {
+    grid-area: video;
+    display: block;
+    margin: auto;
+    width: 80%;
+    grid-row: 1;
+    grid-column: 2;
+    @include movil {
+      width: 100%;
+    }
+  }
+  /*ESTILOS PAGINA PROMOS*/
+  &__promos {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    text-align: -webkit-center;
+    @include movil {
+      display: block;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+    &--img {
+      padding: 1rem;
+      @include movil {
+        border-top: groove map-get($style, color-claro);
+      }
+      &:hover {
+        width: 30rem;
+        @include movil {
+          width: 18rem;
         }
-        &--img{
-            padding: 1rem;
-            @include movil{
-                border-top: groove map-get($style,color-claro );
-            }
-            &:hover {
-                width: 30rem;
-                @include movil{
+      }
+    }
+  }
+  /*ESTILOS PAGINA DUDAS*/
+  &__dudas {
+    color: map-get($style, color-principal);
+    background-color: map-get($style, color-fondo);
+    font-weight: 500;
+    display: grid;
+    text-align: start;
+    gap: 1rem;
+    padding: 0rem;
 
-                    width:18rem;
-                }
-            }
-        }
+    @include movil {
+      display: inline;
     }
-    /*ESTILOS PAGINA DUDAS*/
-    &__dudas{
-        color: map-get($style,color-principal);
-        background-color: map-get($style,color-fondo );
-        font-weight: 500;
-        display: grid;
-        text-align: start;
-        gap: 1rem;
-        padding: 0rem;  
-
-         
-        @include movil{
-            display: inline;
-        }
-        &--titulo{
-            padding: 3rem;
-            font-size: 4rem;
-            @include movil{
-                font-size:3rem;
-            }
-            
-        }
-        &--acordeon {
-            background-color: map-get($style,color-fondo );
-            padding: 2rem;
-            @include movil{
-                display: block;
-            }
-        }
+    &--titulo {
+      padding: 3rem;
+      font-size: 4rem;
+      @include movil {
+        font-size: 3rem;
+      }
     }
-}
-    /*PRODUCTOS TIENDA*/
-@each $sticker in $mapStickers{
-    .main__boxImg--#{$sticker}{
-        background-image: url("../images/stickers/#{$sticker}.jpg");
-        margin: 1rem;
-        background-position: center;
-        height: 40vh;
-        background-size: contain;
-        background-repeat: no-repeat;
+    &--acordeon {
+      background-color: map-get($style, color-fondo);
+      padding: 2rem;
+      @include movil {
+        display: block;
+      }
     }
+  }
 }
-.modalSticker{
-    @include desktop{
-        height: 60vh;
+/*PRODUCTOS TIENDA*/
+@each $sticker in $mapStickers {
+  .main__boxImg--#{$sticker} {
+    background-image: url("../images/stickers/#{$sticker}.jpg");
+    margin: 1rem;
+    background-position: center;
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
+.modalSticker {
+  @include desktop {
+    height: 60vh;
+  }
 }
 
 .kenburns-top {
-    -webkit-animation: kenburns-top 5s ease-out both;
-            animation: kenburns-top 5s ease-out both;
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both;
 }
 /*ESTILOS PAGINA EN CONSTRUCCIÓN*/
-.pagConstruccion{
-    margin: 15rem;
-    @include movil{
-        margin: 2rem 1rem;
-        text-align: center;
-        justify-content: center;
-    }
-    
+.pagConstruccion {
+  margin: 15rem;
+  @include movil {
+    margin: 2rem 1rem;
+    text-align: center;
+    justify-content: center;
+  }
 }

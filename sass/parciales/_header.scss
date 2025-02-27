@@ -1,67 +1,58 @@
 @import "./reset";
 @import "./vars";
 @import "./media-queries";
-.header{
-    &__encabezado{
-        padding: 1rem;
-        background-position: right;
-        background-image:url(../images/inicio/fondoVideo8.jpg);
-        background-repeat:no-repeat;
-        background-size:contain;
-        background-color:map-get($style,color-fondo);
-        color:map-get($style,color-principal);
-        background-origin: content-box;
-        text-align: center;
-        @include tablet{
-           background-position: right bottom;
-        }
+.header {
+  &__encabezado {
+    padding: 1rem;
+    background-position: right;
+    background-image: url(../images/inicio/fondoVideo8.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: map-get($style, color-fondo);
+    color: map-get($style, color-principal);
+    background-origin: content-box;
+    text-align: center;
+    @include tablet {
+      background-position: right bottom;
     }
-    &__nombre{
-        letter-spacing: 1vh;
-        font-size: 4rem;
-        font-family: 'Road Rage', cursive;
-        flex-wrap: wrap;
-        font-weight: 900;
-        @include movil{
-            font-size: 2.5rem;
-        }
+  }
+  &__lema {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-family: "Road Rage", cursive;
+  }
+  &__nav {
+    height: 3rem;
+    background-color: map-get($style, color-principal);
+    font-weight: 700;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: map-get($style, fuente-menu);
+    color: map-get($style, color-fondo);
+    text-decoration: none;
+    &:hover {
+      color: #7f7e7c;
     }
-    &__lema{
-        letter-spacing:2px;
-        font-size:1.5rem;
-        font-family:'Fuzzy Bubbles', cursive;
+    @include tablet {
+      flex-direction: column-reverse;
     }
-    &__nav{
-        background-color:map-get($style,color-principal);
-        font-weight: 700;
-        font-size: 1.25rem;
-        padding-right: 1rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        font-family: map-get($style,fuente-menu);
-        color: map-get($style,color-fondo);
-        text-decoration: none;
-        &:hover{
-            color: #7f7e7c;
-        }
-        @include tablet{
-            flex-direction: column-reverse;
-        }
-        &--submenu{
-            @extend .header__nav;
-            padding: 11px;
-            margin: 0px;
-        }
+    &--submenu {
+      @extend .header__nav;
+      height: auto;
+      padding: 11px;
+      margin: 0px;
     }
-    &__redesItem {
-        display: inline-flex;
-        padding: 0.25rem;
-        gap: 0.5rem;    
-        @include tablet{
-            grid-gap: 1rem;
-            justify-items: center;
-            align-self: end;
-        }
+  }
+  &__redesItem {
+    display: inline-flex;
+    padding: 0.25rem;
+    gap: 0.5rem;
+    @include tablet {
+      grid-gap: 1rem;
+      justify-items: center;
+      align-self: end;
     }
-
+  }
 }

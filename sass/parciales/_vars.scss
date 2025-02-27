@@ -1,35 +1,37 @@
-
-$style:(
-    color-principal:#ffc107,
-    color-fondo: black,
-    padding: 2rem,
-    color-claro: white,
-    fuente-menu: ('Roboto', sans-serif),
-    color-rojoLogo:#f43837,
-)
-;
-$mapStickers:(
-    sticker-1,
-    sticker-2,
-    sticker-3, 
-    sticker-4,
-    sticker-5,
-    sticker-6,
-    sticker-7, 
-    sticker-8,
-    sticker-9,
-    sticker-10,
-    sticker-11,
-    sticker-12,
-    sticker-13,
-    sticker-14,
-    sticker-15,
-    sticker-16,
-    sticker-17,
-    sticker-18,
-    sticker-19,
-    sticker-20,
-)
+$style: (
+  color-principal: #fdfdfd,
+  color-fondo: black,
+  padding: 2rem,
+  color-claro: white,
+  color-btn: #817c7c,
+  fuente-menu: (
+    'Roboto',
+    sans-serif,
+  ),
+  color-rojoLogo: #f43837,
+);
+$mapStickers: (
+  sticker-1,
+  sticker-2,
+  sticker-3,
+  sticker-4,
+  sticker-5,
+  sticker-6,
+  sticker-7,
+  sticker-8,
+  sticker-9,
+  sticker-10,
+  sticker-11,
+  sticker-12,
+  sticker-13,
+  sticker-14,
+  sticker-15,
+  sticker-16,
+  sticker-17,
+  sticker-18,
+  sticker-19,
+  sticker-20
+);
 /*TEXTO
 font-family: 'Cairo', sans-serif;
 font-family: 'Fuzzy Bubbles', cursive;
