@@ -191,7 +191,7 @@ font-family: 'Roboto', sans-serif;
   display: grid;
 }
 .main__carousel {
-  height: 83vh;
+  height: 50vh;
 }
 @media screen and (max-width: 425px) {
   .main__carousel {
@@ -201,7 +201,7 @@ font-family: 'Roboto', sans-serif;
 .main__carousel__img {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 80vh;
+  height: 50vh;
 }
 @media screen and (max-width: 425px) {
   .main__carousel__img {
