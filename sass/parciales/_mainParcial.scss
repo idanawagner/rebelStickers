@@ -11,14 +11,14 @@
   }
 
   &__carousel {
-    height: 83vh;
+    height: 50vh;
     @include movil {
       height: 25vh;
     }
 
     &__img {
       object-fit: contain;
-      height: 80vh;
+      height: 50vh;
       @include movil {
         object-fit: contain;
         height: 25vh;
